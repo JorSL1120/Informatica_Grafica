@@ -7,7 +7,8 @@ Shader "Jetelly/Glass"
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { "RenderType"="Opaque" "Queue"="Transparent"}
+        Blend SrcAlpha One
         LOD 100
 
         Pass
@@ -57,7 +58,7 @@ Shader "Jetelly/Glass"
                 Unity_FresnelEffect_float(i.normal, i.viewDir, _Power, fresnel);
                 fixed4 fresnelColor = fresnel * _Color;
 
-                return col;
+                return fresnelColor;
             }
             ENDCG
         }
