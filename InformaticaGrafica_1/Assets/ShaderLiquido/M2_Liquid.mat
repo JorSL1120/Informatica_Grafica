@@ -27,7 +27,7 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _LiquidAmount: 0.15
+    - _LiquidAmount: 0.25
     - _MidAmount: 0.178
     m_Colors:
     - _BaseColor: {r: 0.38742107, g: 0.8113207, b: 0.28702387, a: 1}
