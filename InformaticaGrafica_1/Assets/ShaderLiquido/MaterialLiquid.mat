@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8312067851010561840
+--- !u!114 &-1120475924072231445
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Liquid
+  m_Name: MaterialLiquid
   m_Shader: {fileID: -6465566751694194690, guid: 294a6968d2586dc49bde19527f06f989, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -51,14 +51,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _LiquidAmount: -2
+    - _LiquidAmount: -1.1
     - _MiddleAmount: 0.2
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _facing: 1
     m_Colors:
-    - _BaseColor: {r: 0.9019475, g: 0, b: 1, a: 1}
-    - _MiddleColor: {r: 0.35563368, g: 1, b: 0.16509426, a: 1}
-    - _TopColor: {r: 0.7263077, g: 0.8962264, b: 0.6975347, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 0, a: 1}
+    - _MiddleColor: {r: 1, g: 0, b: 1, a: 1}
+    - _TopColor: {r: 0, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
