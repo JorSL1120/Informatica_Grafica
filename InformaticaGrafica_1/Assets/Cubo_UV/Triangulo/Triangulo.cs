@@ -7,7 +7,7 @@ using UnityEngine;
 public class Triangulo : MonoBehaviour
 {
     public Material material;
-    private float SpeedRotation = 50f;
+    //private float SpeedRotation = 50f;
 
     void Start()
     {
@@ -16,7 +16,7 @@ public class Triangulo : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(Vector3.up, SpeedRotation * Time.deltaTime);
+        //transform.Rotate(Vector3.up, SpeedRotation * Time.deltaTime);
     }
 
     private void CreateTrian()
@@ -62,7 +62,15 @@ public class Triangulo : MonoBehaviour
             3, 8, 6, //face front
             6, 8, 9, //right face
             9, 8, 3, //left face
-            9, 3, 6 //down face
+            9, 3, 6, //down face
+
+
+
+            //Figura rara
+            1, 2, 5, //front face
+            6, 5, 8, //right face
+            3, 8, 2, //left face
+            3, 1, 6 //down face
         };
 
 
