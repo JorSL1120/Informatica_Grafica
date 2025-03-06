@@ -59,24 +59,6 @@ public class Flauros : MonoBehaviour
             new Vector3(1, 0.82f, 1.15f), //31
             new Vector3(0.5f, 0.82f, 0.29f), //32
             new Vector3(0.5f, 0, 0.87f) //33
-            
-
-
-            /*
-            new Vector3 (0, 0, 0), //0
-            new Vector3 (1, 0, 0), //1
-            new Vector3 (0.5f, 0.82f, 0.29f), //2
-            new Vector3 (0.5f, 0, 0.87f), //3
-
-            new Vector3 (2, 0, 0), //4
-            new Vector3 (1.5f, 0.82f, 0.29f), //5
-            new Vector3 (1.5f, 0, 0.87f), //6
-
-            new Vector3 (1, 1.64f, 0.58f), //7
-            new Vector3 (1, 0.82f, 1.16f), //8
-
-            new Vector3 (1, 0, 1.74f) //9
-            */
         };
 
         int[] triangles =
