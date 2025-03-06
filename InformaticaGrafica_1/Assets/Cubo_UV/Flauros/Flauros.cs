@@ -16,38 +16,50 @@ public class Flauros : MonoBehaviour
     {
         Vector3[] vertices =
         {
+            //Tetraedro 1
+            new Vector3(0, 0, 0), //0
+            new Vector3(1, 0, 0), //1
+            new Vector3(0, 0, 0), //2
+            new Vector3(0.5f, 0.82f, 0.29f), //3
+            new Vector3(0.5f, 0, 0.87f), //4
+            new Vector3(0, 0, 0), //5
+            
+            //Tetraedro 2
+            new Vector3(2, 0, 0), //6
+            new Vector3(1, 0, 0), //7
+            new Vector3(1.5f, 0.82f, 0.29f), //8
+            new Vector3(2, 0, 0), //9
+            new Vector3(1.5f, 0, 0.87f), //10
+            new Vector3(2, 0, 0), //11
+            
+            //Tetraedro 3
+            new Vector3(1, 0, 1.73f), //12
+            new Vector3(1.5f, 0, 0.87f), //13
+            new Vector3(1, 0, 1.73f), //14
+            new Vector3(0.5f, 0, 0.87f), //15
+            new Vector3(1, 0.82f, 1.15f), //16
+            new Vector3(1, 0, 1.73f), //17
+            
+            //Tetraedro 4
+            new Vector3(1, 1.63f, 0.58f), //18
+            new Vector3(1.5f, 0.82f, 0.29f), //19
+            new Vector3(0.5f, 0.82f, 0.29f), //20
+            new Vector3(1, 1.63f, 0.58f), //21
+            new Vector3(1, 0.82f, 1.15f), //22
+            new Vector3(1, 1.63f, 0.58f), //23
+
             //Figura rara
-            new Vector3 (0.5f, 0.82f, 0.29f), //0 +
-            new Vector3 (0.5f, 0, 0.87f), //1 +
-            new Vector3 (1.5f, 0.82f, 0.29f), //2 +
-            new Vector3 (1, 0, 0), //3 +
-            new Vector3 (1.5f, 0, 0.87f), //4 +
-            new Vector3 (0.5f, 0, 0.87f), //5 +
-            new Vector3 (0.5f, 0.82f, 0.29f), //6 +
-            new Vector3 (1, 0.82f, 1.16f), //7 +
-            new Vector3 (1.5f, 0.82f, 0.29f), //8 +
-            new Vector3 (0.5f, 0.82f, 0.29f), //9 +
-
-            //Tetraedro B (cara de la derecha gris)
-            new Vector3 (0, 0, 0), //10 +
-            new Vector3 (0, 0, 0), //11 +
-            new Vector3 (0, 0, 0), //12 +
-
-            //Tetraedro A (cara de la izquierda gris)
-            new Vector3 (2, 0, 0), //13 +
-            new Vector3 (2, 0, 0), //14 +
-            new Vector3 (2, 0, 0), //15 +
-
-            //Tetraedro D (cara de abajo gris)
-            new Vector3 (1, 1.64f, 0.58f), //19 +
-            new Vector3 (1, 1.64f, 0.58f), //20 +
-            new Vector3 (1, 1.64f, 0.58f), //21 +
-
-            //Tetraedro C (cara de frente gris)
-            new Vector3 (1, 0, 1.74f), //16 +
-            new Vector3 (1, 0, 1.74f), //17 +
-            new Vector3 (1, 0, 1.74f), //18 +
-
+            new Vector3(0.5f, 0.82f, 0.29f), //24
+            new Vector3(0.5f, 0, 0.87f), //25
+            new Vector3(1.5f, 0.82f, 0.29f), //26
+            new Vector3(1, 0, 0), //27
+            new Vector3(1.5f, 0, 0.87f), //28
+            new Vector3(0.5f, 0, 0.87f), //29
+            new Vector3(1.5f, 0.82f, 0.29f), //30
+            new Vector3(1, 0.82f, 1.15f), //31
+            new Vector3(0.5f, 0.82f, 0.29f), //32
+            new Vector3(0.5f, 0, 0.87f) //33
+            
 
 
             /*
@@ -69,66 +81,87 @@ public class Flauros : MonoBehaviour
 
         int[] triangles =
         {
-            //Triangulo B
-            10, 0, 3, //face front
-            //3, 0, 1, //right face
-            1, 0, 10, //left face
-            1, 10, 3, //down face
-
-            //Triangulo A
-            3, 2, 14, //face front
-            14, 2, 4, //right face
-            //4, 2, 3, //left face
-            4, 3, 14, //down face
-
-            //Triangulo D
-            6, 20, 8, //face front
-            8, 20, 7, //right face
-            7, 20, 6, //left face
-            //7, 6, 8, //down face
-
-            //Triangulo C
-            //5, 7, 4, //face front
-            16, 7, 4, //right face
-            5, 7, 16, //left face
-            16, 4, 5, //down face
+            //Tetraedro 1
+            0, 3, 1, //front face
+            1, 3, 4, //right face
+            4, 3, 0, //left face
+            4, 2, 1, //buttom face
 
 
+            //Tetraedro 2
+            7, 8, 6, //front face
+            6, 8, 10, //right face
+            10, 8, 7, //left face
+            10, 7, 9, //buttom face
 
-            //Figura rara
-            3, 0, 2, //front face
-            7, 4, 6, //right face
-            7, 8, 9, //left face
-            3, 4, 5 //down face
+            //Tetraedro 3
+            15, 16, 13, //front face
+            13, 16, 14, //right face
+            17, 16, 15, //left face
+            12, 15, 13, //buttom face
+
+            //Tetraedro 4
+            20, 23, 19, //front face
+            19, 23, 22, //right face
+            22, 23, 20, //left face
+            22, 20, 19, //buttom face
+
+            //Figura Rara
+            25, 24, 27, //1
+            27, 24, 26, //2
+            27, 26, 28, //3
+            29, 27, 28, //4
+            28, 31, 29, //5
+            28, 30, 31, //6
+            32, 31, 30, //7
+            33, 31, 32, //8
         };
 
-        Vector2[] uvs = {
-            new Vector2(0.72f, 0.2f), //0 +
-            new Vector2(1, 0.2f), //1 +
-            new Vector2(0.58f, 0.4f), //2 +
-            new Vector2(0.87f, 0.4f), //3 +
-            new Vector2(0.72f, 0.6f), //4 +
-            new Vector2(1, 0.6f), //5 +
-            new Vector2(0.72f, 1), //6 +
-            new Vector2(0.87f, 0.8f), //7 +
-            new Vector2(0.58f, 0.8f), //8 +
-            new Vector2(1, 1), //9 +
-
-            new Vector2(0.29f, 0), //10 +
-            new Vector2(0.58f, 0.4f), //11 +
-            new Vector2(0.87f, 0), //12 +
-
-            new Vector2(0.43f, 0.6f), //13 +
-            new Vector2(0.14f, 1), //14 +
-            new Vector2(0.72f, 1), //15 +
-
-            new Vector2(0.29f, 0), //16 +
-            new Vector2(0f, 0.4f), //17 +
-            new Vector2(0.58f, 0.4f), //18 +
-
-            new Vector2(0, 0.4f), //19
-            new Vector2(0.29f, 0.8f), //20
-            new Vector2(0.58f, 0.4f), //21
+        Vector2[] uvs = 
+        {
+            //Tetraedro 1
+            new Vector2(0.04509f, 0.64516f), //0
+            new Vector2(0.04509f, 0.39746f), //1
+            new Vector2(0.04509f, 0.14573f), //2
+            new Vector2(0.21342f, 0.5203f), //3
+            new Vector2(0.21342f, 0.26857f), //4
+            new Vector2(0.38174f, 0.39746f), //5
+            
+            //Tetraedro 2
+            new Vector2(0.04509f, 0.70101f), //6
+            new Vector2(0.21342f, 0.82659f), //7
+            new Vector2(0.21342f, 0.57846f), //8
+            new Vector2(0.38174f, 0.95066f), //9
+            new Vector2(0.38174f, 0.70101f), //10
+            new Vector2(0.38174f, 0.45288f), //11
+            
+            //Tetraedro 3
+            new Vector2(0.43184f, 0.98848f), //12
+            new Vector2(0.43184f, 0.73732f), //13
+            new Vector2(0.43184f, 0.48767f), //14
+            new Vector2(0.59861f, 0.85836f), //15
+            new Vector2(0.59861f, 0.61174f), //16
+            new Vector2(0.76713f, 0.73732f), //17
+            
+            //Tetraedro 4
+            new Vector2(0.61792f, 0.59207f), //18
+            new Vector2(0.78819f, 0.71614f), //19
+            new Vector2(0.78819f, 0.46649f), //20
+            new Vector2(0.95847f, 0.84021f), //21
+            new Vector2(0.95847f, 0.59207f), //22
+            new Vector2(0.95847f, 0.33486f), //23
+            
+            //Figura rara
+            new Vector2(0.26332f, 0.28021f), //24
+            new Vector2(0.26332f, 0.0285f), //25
+            new Vector2(0.43711f, 0.404f), //26
+            new Vector2(0.43711f, 0.15779f), //27
+            new Vector2(0.60387f, 0.28021f), //28
+            new Vector2(0.60387f, 0.0285f), //29
+            new Vector2(0.77766f, 0.404f), //30
+            new Vector2(0.77766f, 0.15779f), //31
+            new Vector2(0.94969f, 0.28021f), //32
+            new Vector2(0.94969f, 0.0285f) //33
         };
 
 
