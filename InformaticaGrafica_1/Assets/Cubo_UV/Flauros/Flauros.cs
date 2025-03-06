@@ -84,13 +84,13 @@ public class Flauros : MonoBehaviour
             //Tetraedro 1
             0, 3, 1, //front face
             1, 3, 4, //right face
-            4, 3, 0, //left face
+            4, 3, 5, //left face
             4, 2, 1, //buttom face
 
 
             //Tetraedro 2
             7, 8, 6, //front face
-            6, 8, 10, //right face
+            11, 8, 10, //right face
             10, 8, 7, //left face
             10, 7, 9, //buttom face
 
@@ -101,10 +101,10 @@ public class Flauros : MonoBehaviour
             12, 15, 13, //buttom face
 
             //Tetraedro 4
-            20, 23, 19, //front face
-            19, 23, 22, //right face
-            22, 23, 20, //left face
-            22, 20, 19, //buttom face
+            22, 23, 20, //front face
+            20, 18, 19, //right face
+            19, 21, 22, //left face
+            19, 22, 20, //buttom face
 
             //Figura Rara
             25, 24, 27, //1
@@ -121,8 +121,8 @@ public class Flauros : MonoBehaviour
         {
             //Tetraedro 1
             new Vector2(0.04509f, 0.64516f), //0
-            new Vector2(0.04509f, 0.39746f), //1
-            new Vector2(0.04509f, 0.14573f), //2
+            new Vector2(0.03963f, 0.39746f), //1
+            new Vector2(0.03963f, 0.14573f), //2
             new Vector2(0.21342f, 0.5203f), //3
             new Vector2(0.21342f, 0.26857f), //4
             new Vector2(0.38174f, 0.39746f), //5
